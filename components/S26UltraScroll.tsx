@@ -12,8 +12,9 @@ import {
 } from "framer-motion";
 
 const TOTAL_FRAMES = 28;
+const BASE_PATH = "/animated-s26-ultra-app";
 const FRAME_PATH = (index: number) =>
-  `/images/s26-ultra/ezgif-frame-${(index + 1).toString().padStart(3, "0")}.webp`;
+  `${BASE_PATH}/images/s26-ultra/ezgif-frame-${(index + 1).toString().padStart(3, "0")}.webp`;
 
 export default function S26UltraScroll() {
   const containerRef = useRef<HTMLDivElement>(null);
